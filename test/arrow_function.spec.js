@@ -7,7 +7,7 @@ describe("arrow function function", () => {
 
   const arrow_function = (message, name) => message + name;
 
-  it("is equal", () => {
+  it("is equal to using the function keyword", () => {
     let message = "Hello";
     let name = "Peter";
     expect(no_arrow_function(message, name)).to.equal(

@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-describe("destructing_assignment", () => {
+describe("object_destructuring", () => {
   const obj = {
     color: "blue",
     name: "John",

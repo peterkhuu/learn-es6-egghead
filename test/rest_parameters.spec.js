@@ -10,19 +10,8 @@ describe("rest_parameters", () => {
     aisle[category].push(...items);
   };
 
-  const store = { aisle, add };
-
-  it("returns the aisle", () => {
-    store.add("fruits", "bananas", "apples");
-    expect(store.aisle).to.deep.equal({
-      fruits: ["bananas", "apples"],
-      vegetables: []
-    });
-  });
-
-  it("does not add items that belong to a category which is not in that aisle", () => {
-    expect(() => store.add("electronics", "TV", "computer")).to.throw(
-      TypeError
-    );
+  it("adds the remaining parameters into the fruits array", () => {
+    add("fruits", "bananas", "apples");
+    expect(aisle.fruits).to.deep.equal(["bananas", "apples"]);
   });
 });

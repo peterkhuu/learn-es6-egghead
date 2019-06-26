@@ -23,8 +23,7 @@ describe("promises", () => {
     try {
       await promise;
     } catch (error) {
-      return error;
+      expect(error).to.equal("error");
     }
-    expect(promise).to.equal("error");
   });
 });

@@ -17,9 +17,8 @@ The project has been set up using:
 * [Constant Declaration](https://egghead.io/lessons/javascript-const-declarations-in-es6-es2015) introduces read-only variables.
 * [Object Enhancements](https://egghead.io/lessons/javascript-object-enhancements-in-es6) introduces a shorthand to assign an object properties.
 * [Spread Operator](https://egghead.io/lessons/javascript-using-the-es6-spread-operator) allows you to take an array and spread it into individual elements.
-* [Destructuring Assignment](https://egghead.io/lessons/javascript-destructuring-assignment-in-es6) introduces a method of assigning an object's property to be called just by the property itself.
+* [Object Destructuring](https://egghead.io/lessons/javascript-destructuring-assignment-in-es6) introduces a method of assigning an object's property to be called just by the property itself.
 * [Promises](https://egghead.io/lessons/javascript-promises-with-es6) are functions which allow for asynchronous operations to be performed in a synchronous-like matter.
-* [Parameter Object Destructuring](https://egghead.io/lessons/javascript-es6-parameter-object-destructuring-with-required-values) utilises parameter object destructuring to set parameters as required.
 * [Rest Parameters](https://egghead.io/lessons/javascript-es6-rest-parameters) utilises a keyword which is used in parameters to return the rest of the parsed variables into an array.
 
 ## Running Tests
