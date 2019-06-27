@@ -1,18 +1,28 @@
-import { expect } from "chai";
+import { expect } from 'chai';
+import { describe, it } from 'mocha';
 
-describe("const delcarations", () => {
-  it("is immutable", () => {
-    const VAR = "FIRST";
+describe('const delcarations', () => {
+  const VAR = 'FIRST';
+  it('is immutable', () => {
+    const errorFunction = () => {
+      try {
+        // eslint-disable-next-line no-const-assign
+        VAR = 'SECOND';
+      } catch (error) {
+        expect(error).to.throw();
+      }
+    };
 
-    expect(() => (VAR = "SECOND")).to.throw(`"VAR" is read-only`);
+    expect(errorFunction).to.throw(Error);
+
+    expect(VAR).to.equal('FIRST');
   });
 
-  it("adheres to block scope", () => {
-    const VAR = "FIRST";
+  it('adheres to block scope', () => {
     {
-      const VAR = "SECOND";
+      // eslint-disable-next-line no-shadow
+      const VAR = 'SECOND';
+      expect(VAR).to.equal('SECOND');
     }
-
-    expect(VAR).to.equal("FIRST");
   });
 });

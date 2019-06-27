@@ -1,17 +1,19 @@
-import { expect } from "chai";
+import { expect } from 'chai';
+import { describe, it } from 'mocha';
 
-describe("arrow function function", () => {
-  const no_arrow_function = function(message, name) {
+describe('arrow function function', () => {
+  // eslint-disable-next-line func-names
+  const noArrowFunction = function (message, name) {
     return message + name;
   };
 
-  const arrow_function = (message, name) => message + name;
+  const arrowFunction = (message, name) => message + name;
 
-  it("is equal to using the function keyword", () => {
-    let message = "Hello";
-    let name = "Peter";
-    expect(no_arrow_function(message, name)).to.equal(
-      arrow_function(message, name)
+  it('is equal to using the function keyword', () => {
+    const message = 'Hello';
+    const name = 'Peter';
+    expect(noArrowFunction(message, name)).to.equal(
+      arrowFunction(message, name),
     );
   });
 });
