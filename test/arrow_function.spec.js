@@ -12,8 +12,6 @@ describe('arrow function function', () => {
   it('is equal to using the function keyword', () => {
     const message = 'Hello';
     const name = 'Peter';
-    expect(noArrowFunction(message, name)).to.equal(
-      arrowFunction(message, name),
-    );
+    expect(noArrowFunction(message, name)).to.equal(arrowFunction(message, name));
   });
 });
