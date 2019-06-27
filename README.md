@@ -9,6 +9,7 @@ The project has been set up using:
 * **Babel** to allow for the use of ES6.
 * **Mocha** for the testing framework.
 * **Chai** for the assertion library.
+* **Eslint** as the code linter utility.
 
 ## Learnings
 
@@ -24,3 +25,7 @@ The project has been set up using:
 ## Running Tests
 
 Run `npm test`. If `npm test` returns an error, run `npm install && npm test`.
+
+## Running Linter
+
+Run `npm run lint`.
