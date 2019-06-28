@@ -9,7 +9,9 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "eslint-plugin-react": "^7.14.2",
+    "lodash": "^4.17.11",
     "mocha": "^6.1.4"
   },
   "name": "training",
@@ -22,7 +24,7 @@
     "babel-polyfill": "^6.26.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --watch --require @babel/register",
+    "test": "./node_modules/.bin/mocha --watch --recursive --require @babel/register",
     "lint": "./node_modules/.bin/eslint ./test"
   },
   "keywords": [],
