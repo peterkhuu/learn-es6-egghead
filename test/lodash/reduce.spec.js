@@ -7,8 +7,9 @@ describe('reduce', () => {
   };
 
   const array = [2, 6, 8];
+  const initialValue = 2;
 
   it('returns a value after having the function iterate through the elements of the array', () => {
-    expect(reduce(add, 2, array)).to.deep.equal(18);
+    expect(reduce(add, initialValue, array)).to.deep.equal(18);
   });
 });
