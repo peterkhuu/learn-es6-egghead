@@ -12,7 +12,7 @@
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "eslint-plugin-react": "^7.14.2",
     "lodash": ">=4.17.13",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "name": "training",
   "version": "1.0.0",
